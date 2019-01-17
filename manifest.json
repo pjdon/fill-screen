@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Fill-Screen",
+  "version": "0.1",
+
+  "description": "Adds an option for HTML5 videos to fill the entire screen",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["src/fillscreen.js"]
+    }
+  ]
+
+}
